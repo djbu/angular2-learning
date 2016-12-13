@@ -10,6 +10,7 @@ import { OtrosComponent } from './other/otros.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { PropertyBindingComponent } from './databinding/property-binding.component';
 import { EventBindingComponent } from './databinding/event-binding.component';
+import { TwoWayBindingComponent } from './databinding/two-way-binding.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { EventBindingComponent } from './databinding/event-binding.component';
     OtrosComponent,
     DatabindingComponent,
     PropertyBindingComponent,
-    EventBindingComponent
+    EventBindingComponent,
+    TwoWayBindingComponent
   ],
   imports: [
     BrowserModule,
