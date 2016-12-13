@@ -4,7 +4,9 @@ import { Component } from '@angular/core';
   selector: 'app-root',  
   template: `
   <h1>Este es un inline</h1>
-  <app-databinding></app-databinding>    
+    
+  <app-lifecycle *ngIf="!delete"></app-lifecycle>    
+  <button (click) = "delete = true">Delete</button>
   `,
   styles: [`
   h1 {
@@ -14,5 +16,5 @@ import { Component } from '@angular/core';
     
 })
 export class AppComponent {
-  
+  delete = false;
 }
